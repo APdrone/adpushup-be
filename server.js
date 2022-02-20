@@ -5,12 +5,10 @@ dotenv.config({ path: "./config.env" });
 
 const app = require("./app");
 
-// console.log("process.env.DATABASE", process.env);
-
-// const DB = process.env.DATABASE.replace(
-//   "<password>",
-//   process.env.DATABASE_PASSWORD
-// );
+const DB = process.env.DATABASE.replace(
+  "<password>",
+  process.env.DATABASE_PASSWORD
+);
 
 const DB =
   "mongodb+srv://amanp:Quaint321@cluster0.ewbex.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
