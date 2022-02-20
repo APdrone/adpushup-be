@@ -10,9 +10,6 @@ const DB = process.env.DATABASE.replace(
   process.env.DATABASE_PASSWORD
 );
 
-const DB =
-  "mongodb+srv://amanp:Quaint321@cluster0.ewbex.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-
 mongoose
   .connect(DB, {
     useNewUrlParser: true,
